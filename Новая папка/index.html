@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Инженер - Дон Лаура</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:Шрифт.ttf, sans-serif;
+            background-color: #fbfbfa; /* Бежевый фон */
+            color: #353535; /* серый текст */
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0d4d2b; /* Темно-зеленый */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+            animation: fadeInDown 1s ease-out;
+        }
+        .container {
+            padding: 50px;
+            animation: fadeIn 2s ease-in;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 60%;
+            object-fit: cover;
+            margin-right: 40px;
+            border: 5px solid #0d4d2b;
+            transition: transform 0.3s;
+        }
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+        .bio {
+            max-width: 600px;
+        }
+        .bio h2 {
+            margin-top: 0;
+            color: #0d4d2b;
+        }
+        .skills {
+            margin-top: 30px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #e3e3e2;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .skills li:hover {
+            background-color: #f8eea3;
+        }
+        footer {
+            background-color: #0d4d2b;
+            color: #d4d4d4;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Дон Лаура</h1>
+         </header>
+    <div class="container">
+        <section class="profile">
+            <img height="400" src="ФОТО 001.jpg" >
+            <div class="bio">
+                <h2>Обо мне</h2>
+                <p>Кто ищет, тот всегда найдёт... Опытный QA инженер) </p>
+                <div class="skills">
+                    <h3>Навыки:</h3>
+                    <ul>
+                        <li>Ручное тестирования</li>
+                        <li>Аналитика</li>
+                        <li>Postman/Swagger</li>
+                        <li>Kibana/Sentry</li>
+                        <li>Agile/Scrum</li>
+                        <li>HTMI/CSS</li>
+                        <li>Charles: Breakpoints/Map Local</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Хобби</h3>
+            <ul>
+                <li>Дизайн</li>
+                <li>Ремонт</li>
+                <li>Выпечка</li>
+                <li>Планирование</li>
+            
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>Свяжитесь со мной | wa +7 924 235 82 44</p>
+    </footer>
+</body>
+</html>
